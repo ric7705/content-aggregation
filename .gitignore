@@ -3,3 +3,4 @@
 .swagger-codegen/
 target/
 swagger/swagger-codegen-cli-3.0.16.jar
+src/main/frontend/node_modules
