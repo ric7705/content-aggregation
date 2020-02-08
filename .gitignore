@@ -1,0 +1,5 @@
+.idea/
+.swagger-codegen-ignore
+.swagger-codegen/
+target/
+swagger/swagger-codegen-cli-3.0.16.jar

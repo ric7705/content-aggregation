@@ -1,0 +1,7 @@
+{
+  "apiPackage": "com.ceiere.app.controller",
+  "modelPackage": "com.ceiere.app.model",
+  "configPackage": "com.ceiere.app.config.swagger",
+  "groupId": "com.ceiere",
+  "artifactId": "app"
+}
