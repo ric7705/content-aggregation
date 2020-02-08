@@ -25,7 +25,8 @@ sh codegen.sh
   "modelPackage": "com.ceiere.app.model",
   "configPackage": "com.ceiere.app.config.swagger",
   "groupId": "com.ceiere",
-  "artifactId": "app"
+  "artifactId": "app",
+  "hideGenerationTimestamp": true
 }
 ```
 會幫你產生:
@@ -36,3 +37,26 @@ sh codegen.sh
 - application.properties
 - main file
 
+之後為了避免某些檔案被override, 我們需要更改設定,
+只需要產生interface, model.
+其餘application.properties, controller, main file 這邊我們想要自己控制
+因此可以改成如下
+
+```
+{
+  "apiPackage": "com.ceiere.app.controller",
+  "modelPackage": "com.ceiere.app.model",
+  "configPackage": "com.ceiere.app.config.swagger",
+  "groupId": "com.ceiere",
+  "artifactId": "app",
+  "hideGenerationTimestamp": true,
+  "interfaceOnly": true
+}
+```
+多了interfaceOnly後, 只會gen interface和model
+
+另外發現連pom.xml也會被蓋, 因此在.swagger-codegen-ignore直接ignore掉
+
+```
+pom.xml
+```

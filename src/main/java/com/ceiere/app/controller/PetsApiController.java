@@ -1,6 +1,5 @@
 package com.ceiere.app.controller;
 
-import com.ceiere.app.model.Error;
 import com.ceiere.app.model.Pet;
 import com.ceiere.app.model.Pets;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,18 +10,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestPart;
-import org.springframework.web.multipart.MultipartFile;
 
-import javax.validation.constraints.*;
 import javax.validation.Valid;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
+
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2020-02-08T17:59:56.553+08:00[Asia/Taipei]")
 @Controller
 public class PetsApiController implements PetsApi {
